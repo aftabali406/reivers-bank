@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>Document</title>
+</head>
+<body >
+    <header>
+        <div class="topdiv">
+            <img class="logo" src="./images/logo2.png" alt="">
+            <ul class="navlist">
+                <li class="items"><a href="index.html">HOME</a></li>
+                <li class="items"><a class = "active" href="users.html">USERS</a></li>
+                <li class="items"><a href="transactions.html">TRANSACTIONS</a></li>
+            </ul>
+            </div>
+    
+    </header>
+    
+    <!-- <h1>users</h1> -->
+    <div class="top_div">
+        <h3>USER ACCOUNTS</h3>
+        <button class="transfer-btn">TRANSFER NOW</button>
+    </div>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>USER</th>
+                    <th>GENDER</th>
+                    <th>ACCOUNT NO</th>
+                    <th>BALANCE</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+    </div>
+    <div class="modal-bg">
+        <div class="modal">
+            <h3>INSTANT MONEY TRANSFER</h3>
+            <form action="/sendMoney" method="POST">
+                <div class="inner-modal-div">
+                    
+                        <div class="sender-div">
+                            <input type="text" name="sender" required>
+                            <label for="sender" class="label-sender">
+                            <span class="sender-name">ENTER SENDER</span>
+                            </label>
+                        </div>
+                        <div class="sender-div">
+                            <input type="text" name="receiver" required>
+                            <label for="receiver" class="label-sender">
+                            <span class="sender-name">ENTER RECEIVER</span>
+                            </label>
+                        </div>
+                        <input class="input-amount" type="number" placeholder="ENTER AMOUNT" name="amount" required>
+                        <button type="submit">SEND</button>
+                        
+                </div>
+                
+                    
+                </form>
+            <span class="modal-close">X</span>
+        </div>
+    </div>
+    <script src="loadUsers.js"></script> 
+</body>
+
+</html>
